@@ -1,4 +1,42 @@
-/* Тут пиши основные стили */
+.header_point:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header_point:active {
+    color: red;
+}
+
+.header_point {
+    color:#333333;
+    font-size:24px;
+    text-align:left;
+    line-height:36px;
+}
+
+.header_point_wrapper {
+    display: inline;
+    margin: 20px 20px 20px 0;
+}
+
+.header_list {
+    list-style: none;
+    background-color: #eeeeee;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 38px 20px 38px;
+
+}
+
+body {
+    margin: 0;
+}
+
+.header_image {
+    height: 10%;
+    width: 10%;
+    margin: 10px 38px 10px 38px;
+}
 
 * {
     box-sizing: content-box;
@@ -53,9 +91,28 @@ span {
 }
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+    .header_point_wrapper {
+        display: table;
+        margin: 5px 20px 5px 0;
+    }
+
+    main {
+        margin: 0 auto 95px;
+    }
+
+    .header_list {
+        list-style: none;
+        background-color: #eeeeee;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .header_image {
+        height: 15%;
+        width: 15%;
+        margin: 10px 38px 10px 20px;
+    }
  main {
     width: 100%;
     margin: 0px 20px;
